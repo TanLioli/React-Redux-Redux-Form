@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import {HashRouter, Route, withRouter} from "react-router-dom";
-
 import UsersContainer from "./components/Users/UsersContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import LoginPage from "./components/Login/Login";
@@ -15,8 +14,6 @@ import {withSuspense} from "./hoc/withSuspense";
 
 const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer'));
 const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
-
-
 
 class App extends Component {
     componentDidMount() {
@@ -58,7 +55,7 @@ let AppContainer = compose(
     withRouter,
     connect(mapStateToProps, {initializeApp}))(App);
 
-const SamuraiJSApp = (props) => {
+const AKApp = (props) => {
    return <HashRouter >
         <Provider store={store}>
             <AppContainer />
@@ -66,4 +63,4 @@ const SamuraiJSApp = (props) => {
     </HashRouter>
 }
 
-export default SamuraiJSApp;
+export default AKApp;

@@ -1,8 +1,7 @@
 {
-  "name": "react-way-of-samurai",
+  "name": "My Project Andrey",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://it-kamasutra.github.io/react-way-of-samurai",
   "dependencies": {
     "axios": "^0.18.0",
     "classnames": "^2.2.6",

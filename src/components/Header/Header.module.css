@@ -1,10 +1,10 @@
 .header {
     grid-area: h;
-    background-color: green;
+    background-color: rgb(196, 219, 193);
 }
 
 .header img {
-    width: 20px;
+    width: 60px;
 }
 
 .loginBlock {
